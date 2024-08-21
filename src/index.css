@@ -42,7 +42,7 @@ li{
     --white: #3a3a3a;
   }
   aside{
-  background-image: url("src/assets/backgroDark.png");
+  background-image: url("./src/assets/backgroDark.png");
   }
   .menuLink{
     color: var(--gold);
