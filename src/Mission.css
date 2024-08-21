@@ -3,7 +3,7 @@
     animation-range: contain;
 	animation-timeline: view();
     background: no-repeat 0%;
-    background-image: url("src/assets/serviceWhite.png");
+    background-image: url("../src/assets/serviceWhite.png");
     background-position: center;
     background-size: cover;
     color: var(--black);
