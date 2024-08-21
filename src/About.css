@@ -162,6 +162,7 @@
         top:0;
     }
     .pAbout{
+	    color: var(--black);
         height: 100%;
         left: 0;
         margin:0 auto;
