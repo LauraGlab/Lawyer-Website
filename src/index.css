@@ -42,13 +42,13 @@ li{
     --white: #3a3a3a;
   }
   aside{
-  background-image: url("./src/assets/backgroDark.png");
+  background-image: url("../src/assets/backgroDark.png");
   }
   .menuLink{
     color: var(--gold);
   }
   .logo{
-    background-image: url("src/assets/logo.svg");
+    background-image: url("../src/assets/logo.svg");
   }
   .number__section{
   color: var(--gold);
@@ -67,10 +67,10 @@ li{
 	}
 }
 .mission__section{
-    background-image: url("src/assets/serviceDark.png");
+    background-image: url("../src/assets/serviceDark.png");
 }
 .contact__section{
-    background-image: url("src/assets/contactDark.png");
+    background-image: url("../src/assets/contactDark.png");
 }
 .contactForm h1{
 	color: var(--gold);
