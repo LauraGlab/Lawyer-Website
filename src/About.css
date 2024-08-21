@@ -1,0 +1,198 @@
+.about__section{
+    animation: linear animate-in-and-out;
+	animation-timeline: view();
+    background-color: var(--white);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100svh;
+    overflow: hidden;
+    z-index: 1;
+}
+.aboutImg{
+    background-image: url("src/assets/profile.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.aboutText{
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    justify-content: center;
+    position: relative;
+}
+.smallAbout{
+    color: var(--black);
+    font-size: 20px;
+    position: absolute;
+    right: 0.5em;
+    top: 25%;
+}
+.h2About{
+    color: var(--gold);
+    font-size: 70px;
+    position: absolute;
+    right: -45%;
+    top: 30%;
+}
+.hrAbout{
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 1px;
+    left: 100%;
+    position: absolute;
+    top: 43%;
+    width: 100px;
+}
+.pAbout{
+    color: #e6e6e6;
+    height: 50px;
+    position: absolute;
+    left: 102%;
+    top: 46%;
+    width: 250px;
+}
+
+@keyframes animate-out {
+	exit 0% {
+		opacity: 1; transform: translateY(0);
+	}
+	exit 100% {
+		opacity: 0; transform: translateY(-100%);
+	}
+}
+
+@media (max-width: 1365px){
+    .h2About{
+        font-size: 60px;
+        right: -60%;
+    } 
+}
+
+@media (max-width: 1215px){
+    .hrAbout{
+        top: 40%;
+    }
+    .aboutImg{
+        height: 90%;
+        margin-top: 2.5em;
+    }
+}
+@media (max-width: 1070px){
+    .h2About{
+        font-size: 52px;
+        right: -70%;
+    } 
+    .hrAbout{
+        top: 40%;
+    }
+    .pAbout{
+        top: 44%;
+    }
+    .aboutImg{
+        height: 80%;
+        margin-top: 4.5em;
+        width: 90%;
+    }
+}
+@media (max-width: 940px){
+    .h2About{
+        font-size: 50px;
+        right: -80%;
+    } 
+    .aboutImg{
+        height: 70%;
+        margin-top: 6.5em;
+        width: 90%;
+    }
+}
+@media (max-width: 840px){
+    .smallAbout{
+        font-size:16px;
+    }
+    .h2About{
+        font-size: 46px;
+        right: -80%;
+    } 
+}
+@media (max-width: 840px){
+    .about__section{
+        grid-template-columns: none;
+        grid-template-rows: 50% 50%;
+        height: 100svh;
+    }
+    .about__section div:nth-of-type(1) {
+        order: 2;
+    }
+    .about__sectiondiv:nth-of-type(2) {
+        order: 1;
+    }
+    .aboutText{
+        height: 100%;
+        margin-top: 2em;
+        width: 100%;
+    }
+    .aboutImg{
+        height: 370px;
+        margin: 0 auto;
+        width: 412px;
+    }
+    .smallAbout{
+        font-size: 18px;
+        left:0;
+        margin:0 auto;
+        position: relative;
+        top:0;
+    }
+    .h2About{
+        color: var(--gold);
+        font-size: 50px;
+        left:0;
+        margin:0 auto;
+        position:relative;
+        top:0;
+    }
+    .hrAbout{
+        height: 1px;
+        left:0;
+        margin: 0 auto;
+        position: relative;
+        width: 150px;
+        top:0;
+    }
+    .pAbout{
+        height: 100%;
+        left: 0;
+        margin:0 auto;
+        padding: 2em;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        top:0;
+    }
+}
+
+@media (max-width: 450px){
+    .smallAbout{
+        font-size: 14px;
+    }
+    .h2About{
+        font-size: 38px;
+        padding-bottom: 0.3em;
+    }
+     .pAbout{
+        font-size: 14px;
+    }
+}
+@media (max-width: 412px){
+    .aboutImg{
+        height: 270px;
+        margin: 5em auto;
+        width: 312px;
+    }
+    .h2About{
+        font-size: 30px;
+        padding-bottom: 0.3em;
+    }
+}

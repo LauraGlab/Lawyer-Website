@@ -1,0 +1,38 @@
+.app{
+  display: flex;
+  height: 100svh;
+  position: relative;
+}
+.navBar__container{
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+.main{
+  height: 100%;
+  padding-top: 100vh;
+  position: relative;
+  width: 100%;
+}
+@keyframes animate-in-and-out {
+	entry 0%  {
+		opacity: 0;
+	}
+	entry 100%  {
+		opacity: 1;
+	}
+
+	exit 0% {
+		opacity: 1;
+	}
+	exit 100% {
+		opacity: 0;
+	}
+}
+@media (max-width: 1025px) {
+  .app{
+  position: relative;
+  display: block;
+}
+
+}

@@ -1,0 +1,128 @@
+aside{
+  background-image: url("src/assets/backgro.png");
+  background-size: cover;  
+  background-position: top right;
+  height: 100svh;
+}
+.navBar__section{
+  animation: sticky-parallax-header-move-and-size linear forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 90vh;
+  font-size: 20px;
+  height: 100svh;
+  position: fixed;
+	top: 0;
+  width: 100%;
+  z-index: 999999999;
+}
+.menu__section{
+  column-gap: 1em;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  left: 0;
+  position: absolute;
+  top: 1em;
+  z-index: 99999;
+}
+.menuLink{
+  color: #e6e6e6;
+}
+.logo{
+  animation: sticky-parallax-logo-move-and-size linear forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 90vh;
+  background-image: url("src/assets/logo1.svg");
+  background-size: contain;  
+  background-repeat: no-repeat;
+  padding: 3em 0;
+  width: 300px;
+}
+.logo__section{
+  align-items: center;
+  animation: sticky-parallax-logo-move-and-size linear forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 90vh;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top:25%;
+  width: 100%;
+}
+.number__section{
+  color: #e6e6e6;
+  font-size: 20px;
+  position: absolute;
+  right: 3em;
+  top: 1em;
+}
+@keyframes sticky-parallax-header-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+	}
+	to {
+		background-position: 50% 100%;
+		background-color: #897455c7;
+		height: 10svh;
+	}
+}
+@keyframes sticky-parallax-logo-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+	}
+	to {
+		background-position: 50% 100%;
+		height: 10svh;
+    padding: 0;
+    top: 0;
+	}
+}
+@media (max-width: 640px){
+  .menu__section,.number__section{
+  font-size: 14px;
+  top: 2em;
+}
+@keyframes sticky-parallax-header-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+	}
+	to {
+		background-position: 50% 100%;
+		background-color: #897455c7;
+		height: 8svh;
+	}
+}
+@keyframes sticky-parallax-logo-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+	}
+	to {
+		background-position: 50% 100%;
+		height: 8svh;
+    padding: 0;
+    top: 0.2em;
+	}
+}
+}
+@media (max-width: 500px){
+  .menu__section{
+    padding-left: 0.5em;
+  }
+  .logo{
+    width: 200px;
+  }
+  .logo__section{
+    top: 35%;
+  }
+  .number__section{
+    right: 0.5em;
+  }
+}

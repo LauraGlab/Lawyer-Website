@@ -1,0 +1,127 @@
+.contact__section{
+	animation: linear animate-in;
+	animation-timeline: view();
+    background: no-repeat;
+    background-image: url("src/assets/contactWhite.png");
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    justify-content: center;
+    padding-right: 6em;
+    overflow-x: hidden;
+    width: 100svw;
+}
+.contactForm{
+    display: flex;
+	color: var(--black);
+    flex-direction: column;
+    text-align:right;
+    width:100%;
+ }
+.contactForm h1{
+	color: #3a3a3a;
+    font-size: 40px;
+    padding: 0.5em 0 0.1em;
+    text-transform:capitalize;
+ }
+.contactForm h3{
+	color: #3a3a3a;
+  }
+.contactForm p{
+    color:#9999B9;
+    margin-bottom: 3em;
+ }
+ .hrContact{
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 1px;
+    margin: 2em 0 0 80%;
+}
+.inputFields{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 1.5em 3em 0 0;
+    overflow: hidden;
+    width: 100%;
+}
+.inputFields input{
+	background-color: rgba(255, 255, 255, 0.485);
+	border:0;
+    border-radius:3px ;
+    margin:0 0 2em 55%;
+	outline: none;
+    padding: 1.1em 1.75em;
+}
+.inputFields input:focus{
+	border: 1px solid var(--gold);
+}
+.msg textarea{
+	background-color: rgba(255, 255, 255, 0.485);
+    border:0;
+	border-radius:3px ;
+    height:160px;
+    margin-bottom: 2em;
+	outline: none;
+	padding: 1em 2em;
+	resize: none;
+    width: 450px;
+ }
+.msg textarea:focus{
+	border: 1px solid var(--gold);
+}
+.btn{
+	background: transparent;
+	border: 1px solid var(--gold);
+	color:var(--gold);
+	cursor:pointer;
+	padding: 1em 1.5em;
+	text-transform:uppercase;
+	transition: all 0.5s linear;
+ }
+.btn:hover{
+	background:none;
+	border:1px solid var(--black);
+	color:var(--black);
+	transition: 500ms;
+}
+@keyframes animate-in {
+	entry 0%  {
+		opacity: 0;
+	}
+	entry 100%  {
+		opacity: 1;
+	}
+
+}
+
+@media (max-width: 600px){
+	.contact__section{
+		padding-left: 4em;
+		padding-right: 4em;
+	}
+	.contactForm{
+		text-align: center;
+	}
+	 .hrContact{
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 1px;
+    margin: 2em 20% 0 ;
+}
+	.inputFields input{
+		margin:0 0 2em 0;
+	}
+	.msg textarea{
+		width: 100%;
+	}
+}
+@media (max-width: 420px){
+	.contact__section{
+		padding-left: 1em;
+		padding-right: 2em;
+	}
+}

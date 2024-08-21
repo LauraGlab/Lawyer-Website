@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
+:root{
+  --black: #3a3a3a;
+  --black-hover: #989898;
+  --gold: #897455;
+  --dark-red: #8A3433;
+  --gray: #77766C;
+  --white: #e6e6e6;
+  --main-text: "Arapey", serif;
+  --lighter-gold: #C7B191;
+}
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+#root{
+  height: 100svh;
+}
+body{
+  background-color: var(--white);
+  color: var(--black);
+  font-family: "Gothic A1", sans-serif;
+  min-width: 320px;
+  overflow-x: hidden;
+  position: relative;
+}
+.active {
+	color:red !important;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+li{
+  list-style-type: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    --black: #e6e6e6;
+    --white: #3a3a3a;
+  }
+  aside{
+  background-image: url("src/assets/backgroDark.png");
+  }
+  .menuLink{
+    color: var(--gold);
+  }
+  .logo{
+    background-image: url("src/assets/logo.svg");
+  }
+  .number__section{
+  color: var(--gold);
+  }
+  @keyframes sticky-parallax-header-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+		font-size: calc(4vw + 1em);
+	}
+	to {
+		background-position: 50% 100%;
+		background-color: #5c5c5cc7;
+		height: 10svh;
+		font-size: 2em;
+	}
+}
+.mission__section{
+    background-image: url("src/assets/serviceDark.png");
+}
+.contact__section{
+    background-image: url("src/assets/contactDark.png");
+}
+.contactForm h1{
+	color: var(--gold);
+ }
+.contactForm h3{
+	color: var(--gold);
+  }
+  .inputFields input{
+	background-color: rgba(122, 122, 122, 0.341);
+  }
+  .inputFields textarea{
+	background-color: rgba(122, 122, 122, 0.341);
+  }
+}
