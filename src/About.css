@@ -9,7 +9,7 @@
     z-index: 1;
 }
 .aboutImg{
-    background-image: url("src/assets/profile.jpg");
+    background-image: url("../src/assets/profile.jpg");
     background-size: cover;
     height: 100%;
     width: 100%;
