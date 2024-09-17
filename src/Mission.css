@@ -37,8 +37,11 @@
     width: 25%;
 }
 .missionButton:hover{
-    background-color: var(--gold);
-    animation: slideIn 1s ease-in;
+    background-color: rgba(137, 116, 85, 0.266);
+    transition: all 1s;
+}
+.missionButton span{
+    z-index: 2;
 }
 
 
