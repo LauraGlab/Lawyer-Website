@@ -19,6 +19,17 @@ footer {
   overflow: hidden;
   padding: 0.7em;
 }
+.footerSecond{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.portfolioLink{
+  color: var(--gold);
+  font-size: 12px;
+}
 @media (max-width: 790px) {
   .footerFirst {
     margin: 0.5em 1em;
