@@ -1,15 +1,19 @@
 aside{
-  background-image: url("../src/assets/backgro.png");
+  background-image: url("src/assets/backgro.png");
   background-size: cover;  
   background-position: top right;
   height: 100svh;
 }
 .navBar__section{
+  align-items:center;
   animation: sticky-parallax-header-move-and-size linear forwards;
 	animation-timeline: scroll();
-	animation-range: 0vh 90vh;
+  animation-range: 0vh 90vh;
+  display: flex;
+  flex-direction: column;
   font-size: 20px;
   height: 100svh;
+  justify-content: center;
   position: fixed;
 	top: 0;
   width: 100%;
@@ -25,14 +29,18 @@ aside{
   top: 1em;
   z-index: 99999;
 }
-.menuLink{
-  color: #e6e6e6;
+.menu__section button{
+  background: inherit;
+  border: none;
+  color: var(--white);
+  font-size: 13px;
+  outline: none;
 }
 .logo{
   animation: sticky-parallax-logo-move-and-size linear forwards;
 	animation-timeline: scroll();
-	animation-range: 0vh 90vh;
-  background-image: url("../src/assets/logo1.svg");
+	animation-range: 0vh 80vh;
+  background-image: url("src/assets/logo1.svg");
   background-size: contain;  
   background-repeat: no-repeat;
   padding: 3em 0;
@@ -42,7 +50,7 @@ aside{
   align-items: center;
   animation: sticky-parallax-logo-move-and-size linear forwards;
 	animation-timeline: scroll();
-	animation-range: 0vh 90vh;
+	animation-range: 0vh 80vh;
   color: var(--white);
   display: flex;
   flex-direction: column;
@@ -57,7 +65,7 @@ aside{
   color: #e6e6e6;
   font-size: 20px;
   position: absolute;
-  right: 3em;
+  right: 3.5em;
   top: 1em;
 }
 @keyframes sticky-parallax-header-move-and-size {
@@ -78,13 +86,14 @@ aside{
 	}
 	to {
 		background-position: 50% 100%;
-		height: 10svh;
+		height: 9svh;
     padding: 0;
-    top: 0;
+    top: 0.1em;
 	}
 }
 @media (max-width: 640px){
   .menu__section,.number__section{
+    column-gap: 0;
   font-size: 14px;
   top: 2em;
 }
@@ -106,7 +115,7 @@ aside{
 	}
 	to {
 		background-position: 50% 100%;
-		height: 8svh;
+		height: 7svh;
     padding: 0;
     top: 0.2em;
 	}
