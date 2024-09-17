@@ -6,7 +6,7 @@ import NavBar from "./NavBar.jsx";
 import Mission from "./Mission.jsx";
 import "./App.css";
 
-export default function App() {
+function App() {
 
    useEffect(() => {
     console.log.apply(console, [
@@ -29,3 +29,4 @@ export default function App() {
     </div>
   );
 }
+export default App;
