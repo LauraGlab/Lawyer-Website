@@ -64,10 +64,10 @@ li{
 	}
 }
 .mission__section{
-    background-image: url("src/assets/serviceDark.png");
+    background-image: url("./assets/serviceDark.png");
 }
 .contact__section{
-    background-image: url("src/assets/contactDark.png");
+    background-image: url("./assets/contactDark.png");
 }
 .contactForm h1{
 	color: var(--gold);
