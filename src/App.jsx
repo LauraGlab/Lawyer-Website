@@ -14,7 +14,7 @@ function App() {
       "color: white" +
         "; background: padding:5px 0; border-radius: 5px; font-weight: bold; background-color: #897455;",
     ]);
-   };
+   });
 
   return (
     <div className="app">
