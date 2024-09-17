@@ -1,5 +1,5 @@
 aside{
-  background-image: url("./assets/backgro.png");
+  background-image: url("../src/assets/backgro.png");
   background-size: cover;  
   background-position: top right;
   height: 100svh;
@@ -40,7 +40,7 @@ aside{
   animation: sticky-parallax-logo-move-and-size linear forwards;
 	animation-timeline: scroll();
 	animation-range: 0vh 80vh;
-  background-image: url("src/assets/logo1.svg");
+  background-image: url("../src/assets/logo1.svg");
   background-size: contain;  
   background-repeat: no-repeat;
   padding: 3em 0;
