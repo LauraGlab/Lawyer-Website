@@ -1,6 +1,6 @@
 import "./Mission.css";
 
-function Services() {
+export default function Services() {
   
     return (
       <div className="mission__section" id="mission">
@@ -15,10 +15,20 @@ function Services() {
           offer and discover how I can assist you in navigating your legal
           challenges with confidence and ease.
         </p>
-        <button className="missionButton">CONTACT US</button>
+        <button
+          className="missionButton"
+          onClick={() => {
+            const element = document.getElementById("contact");
+            element?.scrollIntoView({
+              behavior: "smooth",
+            });
+          }}
+          aria-label="Move to a contact section"
+        >
+          <span>CONTACT US</span>
+        </button>
       </div>
     );
   }
 
 
-export default Services;
