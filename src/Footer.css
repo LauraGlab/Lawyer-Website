@@ -29,6 +29,7 @@ footer {
 .portfolioLink{
   color: var(--gold);
   font-size: 12px;
+  padding-bottom: 0.5em;
 }
 @media (max-width: 790px) {
   .footerFirst {
