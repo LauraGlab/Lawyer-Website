@@ -1,0 +1,300 @@
+aside{
+  background-image: url("../src/assets/backgro.png");
+  background-size: cover;  
+  background-position: top right;
+  height: 100svh;
+}
+.header__section{
+  background-color: var(--white);
+  -webkit-box-shadow: 1px 13px 50px -20px rgba(0,0,0,1);
+  -moz-box-shadow: 1px 13px 50px -20px rgba(0,0,0,1);
+  box-shadow: 1px 13px 50px -20px rgba(0,0,0,1);
+  display: flex;
+  height: 5svh;
+  justify-content: space-between;
+  position: absolute;
+  top:0;
+  width: 100%;
+  z-index: 99999999999999999999999999999;
+}
+.info__section{
+  color: var(--gold);
+  column-gap: 1em;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em 0 0.5em 8em;
+}
+.phone__section, .email__section, .hours__section{
+  align-items: center;
+  column-gap: 0.3em;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+}
+.phone{
+  height: 25px;
+  width: 25px;
+}
+.dot{
+  margin-left: 1em;
+}
+.message__section{
+  align-items: center;
+  background-color: var(--gold);
+  border: none;
+  color: #3a3a3a;
+  column-gap: 0.5em;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+  margin-right: 8em;
+  outline: none;
+  padding: 0 2em;
+}
+.navBar__section{
+  align-items:center;
+  -webkit-animation: sticky-parallax-header-move-and-size forwards;
+  animation: sticky-parallax-header-move-and-size forwards;
+	animation-timeline: scroll();
+  animation-range: 0vh 90vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  height: 100svh;
+  justify-content: center;
+  position: fixed;
+	top: 0;
+  width: 100%;
+  z-index: 999999999;
+}
+.hamburgerMenu__section{
+  opacity: 0;
+}
+.menu__section{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  position: absolute;
+  right: 1em;
+  top: 0.5em;
+  column-gap: 0;
+  z-index: 99999;
+}
+.menuBtn{
+  -webkit-animation: sticky-parallax-menu-move-and-size forwards;
+  animation: sticky-parallax-menu-move-and-size forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 80vh;
+  background: linear-gradient(
+      to right,
+      transparent,
+      transparent
+    ),
+    linear-gradient(
+      to right,
+      var(--gold),
+      var(--gold),
+      var(--gold)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  border: none;
+  color: var(--white);
+  margin-right: 1em;
+  outline: none;
+  transition: background-size 400ms;
+}
+.menuBtn:hover{
+  background-size: 0 3px, 100% 3px;
+}
+.menuBtn:focus{
+  background-size: 0 3px, 100% 3px;
+}
+.logo{
+  -webkit-animation: sticky-parallax-logo-move-and-size forwards;
+  animation: sticky-parallax-logo-move-and-size forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 80vh;
+  background-image: url("../src/assets/logo1.svg");
+  background-size: contain;  
+  background-repeat: no-repeat;
+  padding: 3em 0;
+  width: 300px;
+}
+.logo__section{
+  align-items: center;
+  -webkit-animation: sticky-parallax-logo-move-and-size forwards;
+  animation: sticky-parallax-logo-move-and-size forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 80vh;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top:25%;
+  width: 100%;
+}
+@keyframes sticky-parallax-menu-move-and-size {
+	from {
+    font-size: 16px;
+		top: 1em;
+	}
+	to {
+    font-size: 14px;
+		top: 1em;
+	}
+}
+@keyframes sticky-parallax-header-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+	}
+	to {
+		background-position: 50% 100%;
+		background-color: #897455c7;
+		height: 10svh;
+	}
+}
+@keyframes sticky-parallax-logo-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+	}
+	to {
+		background-position: 50% 100%;
+		height: 9svh;
+    padding: 0;
+    top: 0.1em;
+	}
+}
+@keyframes showLogo{
+  0%{opacity: 0;}
+  100% { opacity: 1;}
+}
+
+@media (max-width: 1030px){
+  .header__section,.menu__section{
+    opacity: 0;
+  }
+  .hamburgerMenu__section{
+    -webkit-animation: sticky-parallax-hamburger-move-and-size forwards;
+    animation: sticky-parallax-hamburger-move-and-size forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 80vh;
+    border: 1px solid var(--gold);
+    border-radius: 0.1em;
+    opacity: 1;
+    padding: 0;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 9999999;
+  }
+  @keyframes sticky-parallax-hamburger-move-and-size {
+  from {
+    top: 1em;
+  }
+	to {
+		top: 0.25em;
+	}
+}
+}
+
+@media (max-width: 640px){
+  .menu__section{
+    column-gap: 0;
+    font-size: 14px;
+    top: 2em;
+}
+  .hamburgerMenu__section{
+    height: 30px;
+    width: 30px;
+  }
+@keyframes sticky-parallax-hamburger-move-and-size {
+    from {
+        top: 1em;
+    }
+  to {
+    top: 0.6em;
+  }
+}
+@keyframes sticky-parallax-header-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+	}
+	to {
+		background-position: 50% 100%;
+		background-color: #897455c7;
+		height: 8svh;
+	}
+}
+@keyframes sticky-parallax-logo-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+	}
+	to {
+		background-position: 50% 100%;
+		height: 7svh;
+    padding: 0;
+    top: 0.2em;
+	}
+}
+}
+
+@media (max-width: 500px){
+  .menu__section{
+    padding-left: 0.5em;
+  }
+  .logo{
+    width: 200px;
+  }
+  .logo__section{
+    top: 35%;
+  }
+}
+
+@media (max-width: 400px){
+    .hamburgerMenu__section{
+        right: 0.5em;
+    }
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  body{
+    --black: #e6e6e6;
+    --white: #3a3a3a;
+  }
+  aside{
+  background-image: url("src/assets/backgroDark.png");
+  }
+  .menu__section button{
+    color: var(--gold);
+  }
+  .logo{
+    background-image: url("src/assets/logo.svg");
+  }
+  @keyframes sticky-parallax-header-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+		font-size: calc(4vw + 1em);
+	}
+	to {
+		background-position: 50% 100%;
+		background-color: #585858c7;
+		height: 10svh;
+		font-size: 2em;
+	}
+}
+}

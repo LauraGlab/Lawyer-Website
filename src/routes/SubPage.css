@@ -1,0 +1,130 @@
+.subpage__section{
+    background-color: var(--white);
+    overflow: hidden;
+    width: 100%;
+}
+.logoSubPage{
+    padding: 1em 0 0 4em;
+}
+.subpageInfo__section{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+.firstSection{
+    height: 100%;
+    padding: 2em 4em;
+    position: absolute;
+    top:4em;
+    width: 50%;
+}
+.hrSubPage{
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 3px;
+    margin: 2em 0;
+    width: 50px;
+}
+.firstSection p{
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+    font-size: 14px;
+    width: 450px;
+}
+.imgSubPage{
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+    height: 320px;
+    margin-top: 1em;
+    width: 455px;
+}
+.ulSubPage li{
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+  list-style-type:disc;
+  padding-bottom: 0.5em;
+}
+.subpageTitle{
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+    color: var(--black);
+}
+.secondSection{
+    background-color: #89745558;
+    bottom: 2em;
+    padding: 4em 4em 4em 6em;
+    position: absolute;
+    right: 0;
+    top: 2em;
+    width: 50%;
+}
+.secondTitle{
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+    0%{opacity:0;}
+    50%{opacity: 0.5}
+    100% { opacity: 1; } 
+}
+
+@media(max-width: 1100px){
+    .imgSubPage{
+    height: 290px;
+    width: 425px;
+}
+.secondSection{
+    padding: 4em 2em;
+    width: 47%;
+}
+}
+
+@media(max-width: 1000px){
+    .logoSubPage{
+        height: 80px;
+    }
+    .subpageInfo__section{
+        display: block;
+    }
+    .firstSection, .secondSection{
+        position: relative;
+        width: 100%;
+    }
+    .subpageTitle, .secondTitle{
+        font-size: calc(3vw + 0.5em);
+    }
+    .firstSection{
+        padding-top: 0;
+    }
+    .firstSection p{
+        width: 100%;
+    }
+    .imgSubPage{
+        height: calc(52vw + 0.5em);;
+        width: calc(85vw + 0.5em);
+    }
+    .secondSection{
+        margin-top: 3em;
+    }
+    
+}
+@media(max-width: 765px){
+    .firstSection{
+        padding: 0 2em 2em;
+    }
+    .imgSubPage{
+        height: calc(40vw + 0.5em);;
+        width: calc(73vw + 0.5em);
+    }
+    .firstSection p{
+        font-size: 14px;
+    }
+    .ulSubPage{
+        padding: 0;
+    }
+    .ulSubPage li{
+        font-size: 14px;
+        
+    }
+}

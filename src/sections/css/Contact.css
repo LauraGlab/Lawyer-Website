@@ -1,0 +1,173 @@
+.contact__section{
+	-webkit-animation: linear animate-in-and-out;
+    animation: linear animate-in-and-out;
+	animation-timeline: view();
+    background: no-repeat;
+    background-image: url("src/assets/contactWhite.png");
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    justify-content: center;
+    padding-right: 6em;
+    overflow-x: hidden;
+    width: 100svw;
+}
+.contactForm{
+    display: flex;
+	color: var(--black);
+    flex-direction: column;
+    text-align:right;
+    width:100%;
+ }
+.contactTitle{
+	color: #3a3a3a;
+    font-size: 40px;
+    padding: 0 0 0.1em;
+    text-transform:capitalize;
+ }
+.contactSubTitle{
+	color: #3a3a3a;
+	font-size: 16px;
+	margin-left: 60%;
+  }
+ .hrContact{
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 1px;
+    margin: 2em 0 0 80%;
+}
+.inputFields{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 1.5em 3em 0 0;
+    overflow: hidden;
+	position: relative;
+    width: 100%;
+}
+.inputFields input{
+	background-color: rgba(255, 255, 255, 0.485);
+	border:0;
+    border-radius:3px ;
+    margin:0 0 0 55%;
+	outline: none;
+    padding: 1.1em 1.75em;
+}
+.inputFields input:focus{
+	border: 1px solid var(--gold);
+}
+input:-internal-autofill-selected {
+	background-color: rgba(255, 255, 255, 0.485);
+	border: 1px solid var(--gold);
+}
+.msg{
+	display: flex;
+	flex-direction: column;
+}
+.inputText{
+	background-color: rgba(255, 255, 255, 0.485);
+    border:0;
+	border-radius:3px ;
+    height:160px;
+	margin-left: 55%;
+	outline: none;
+	padding: 1em 2em;
+	resize: none;
+    width: 100%;
+ }
+.inputText:focus{
+	border: 1px solid var(--gold);
+}
+.btn{
+	background: transparent;
+	border: 1px solid var(--gold);
+	color:var(--gold);
+	cursor:pointer;
+	padding: 1em 1.5em;
+	text-transform:uppercase;
+	transition: all 0.5s linear;
+ }
+.btn:hover{
+	background:none;
+	border:1px solid var(--black);
+	color:var(--black);
+	transition: 500ms;
+}
+.inputName, .inputEmail, .inputText{
+	margin-bottom: 0;
+}
+.error__section{
+	height: 2em;
+}
+.errorName, .errorEmail, .errorText{
+	color: var(--gold);
+	font-size: 12px;
+	font-weight: 700;
+}
+@keyframes animate-in-and-out {
+	entry 0%  {
+		opacity: 0; transform: translateY(50%);
+	}
+	entry 100%  {
+		opacity: 1; transform: translateY(0);
+	}
+
+	exit 0% {
+		opacity: 1; transform: translateY(0);
+	}
+	exit 100% {
+		opacity: 0; transform: translateY(-50%);
+	}
+}
+
+@media (max-width: 760px){
+	.contact__section{
+		padding: 0 4em;
+	}
+	.contactTitle, .contactSubTitle{
+		margin-left: 0;
+		text-align: center;
+		width: 100%;
+	}
+	 .hrContact{
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 1px;
+    margin: 2em 20% 0 ;
+}
+	.inputFields input{
+		margin-left: 0;
+		width: 100%;
+	}
+	.msg textarea{
+		margin-left: 0;
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px){
+	.contact__section{
+		padding: 0 3em 0 2em;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+.contact__section{
+    background-image: url("src/assets/contactDark.png");
+}
+.contactForm h1{
+	color: var(--gold);
+ }
+.contactForm h3{
+	color: var(--gold);
+  }
+  .inputFields input{
+	background-color: rgba(122, 122, 122, 0.341);
+  }
+  .inputFields textarea{
+	background-color: rgba(122, 122, 122, 0.341);
+  }
+}
