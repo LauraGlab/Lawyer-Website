@@ -54,7 +54,7 @@ export default function Contact() {
               />
               <div className="error__section">
                 {errors.name && (
-                  <span className="errorName">{errors.name.message}</span>
+                  <span className="errorName">Imię musi zawierać co najmniej 3 znaki</span>
                 )}
               </div>
               <input
@@ -64,7 +64,7 @@ export default function Contact() {
               />
               <div className="error__section">
                 {errors.email && (
-                  <span className="errorEmail">{errors.email.message}</span>
+                  <span className="errorEmail">Niepoprawny e-mail</span>
                 )}
               </div>
               <div className="msg">
@@ -75,7 +75,7 @@ export default function Contact() {
                 ></textarea>
                 <div className="error__section">
                   {errors.message && (
-                    <span className="errorText">{errors.message.message}</span>
+                    <span className="errorText">Wiadomoćś powinna zawierać co najmniej 10 znaków</span>
                   )}
                 </div>
               </div>
