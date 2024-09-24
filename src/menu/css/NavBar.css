@@ -145,11 +145,11 @@ aside{
 @keyframes sticky-parallax-menu-move-and-size {
 	from {
     font-size: 16px;
-		top: 3em;
+		top: 4em;
 	}
 	to {
     font-size: 14px;
-		top: 0;
+		top: 1.5em;
 	}
 }
 @keyframes sticky-parallax-header-move-and-size {
