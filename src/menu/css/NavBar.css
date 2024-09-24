@@ -276,13 +276,13 @@ aside{
     --white: #3a3a3a;
   }
   aside{
-  background-image: url("src/../assets/backgroDark.png");
+  background-image: url("src/../../assets/backgroDark.png");
   }
   .menu__section button{
     color: var(--gold);
   }
   .logo{
-    background-image: url("src/../assets/logo.svg");
+    background-image: url("src/../../assets/logo.svg");
   }
   @keyframes sticky-parallax-header-move-and-size {
 	from {
