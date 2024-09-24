@@ -39,7 +39,7 @@ export default function NavBar() {
           <button
             className="message__section"
             onClick={() => {
-              const element = document.getElementById("message");
+              const element = document.getElementById("contact");
               element?.scrollIntoView({
                 behavior: "smooth",
               });
