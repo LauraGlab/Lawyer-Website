@@ -149,7 +149,7 @@ aside{
 	}
 	to {
     font-size: 14px;
-		top: 1em;
+		top: 0;
 	}
 }
 @keyframes sticky-parallax-header-move-and-size {
@@ -174,10 +174,6 @@ aside{
     padding: 0;
     top: 0.1em;
 	}
-}
-@keyframes showLogo{
-  0%{opacity: 0;}
-  100% { opacity: 1;}
 }
 
 @media (max-width: 1030px){
