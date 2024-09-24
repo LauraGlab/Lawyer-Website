@@ -3,6 +3,7 @@ aside{
   background-size: cover;  
   background-position: top right;
   height: 100svh;
+  width: 100%;
 }
 .header__section{
   background-color: var(--white);
