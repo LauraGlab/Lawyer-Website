@@ -181,7 +181,10 @@ aside{
 
 @media (max-width: 1030px){
   .header__section,.menu__section{
-    opacity: 0;
+    display: none;
+  }
+  .navBar__section{
+    width: 95%;
   }
   .hamburgerMenu__section{
     -webkit-animation: sticky-parallax-hamburger-move-and-size forwards;
