@@ -180,9 +180,6 @@ aside{
   .header__section,.menu__section{
     display: none;
   }
-  .navBar__section{
-    width: 95%;
-  }
   .hamburgerMenu__section{
     -webkit-animation: sticky-parallax-hamburger-move-and-size forwards;
     animation: sticky-parallax-hamburger-move-and-size forwards;
