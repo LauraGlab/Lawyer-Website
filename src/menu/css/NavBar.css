@@ -145,7 +145,7 @@ aside{
 @keyframes sticky-parallax-menu-move-and-size {
 	from {
     font-size: 16px;
-		top: 1em;
+		top: 0;
 	}
 	to {
     font-size: 14px;
