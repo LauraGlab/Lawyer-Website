@@ -75,6 +75,10 @@ aside{
   opacity: 0;
 }
 .menu__section{
+	-webkit-animation: sticky-parallax-menu-move-and-size forwards;
+  animation: sticky-parallax-menu-move-and-size forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 80vh;
   display: flex;
   flex-direction: row;
   padding: 0;
@@ -85,10 +89,6 @@ aside{
   z-index: 99999;
 }
 .menuBtn{
-  -webkit-animation: sticky-parallax-menu-move-and-size forwards;
-  animation: sticky-parallax-menu-move-and-size forwards;
-	animation-timeline: scroll();
-	animation-range: 0vh 80vh;
   background: linear-gradient(
       to right,
       transparent,
@@ -145,7 +145,7 @@ aside{
 @keyframes sticky-parallax-menu-move-and-size {
 	from {
     font-size: 16px;
-		top: 0;
+		top: 3em;
 	}
 	to {
     font-size: 14px;
