@@ -18,7 +18,8 @@
     animation: fadeIn forwards;
 	animation-timeline: scroll();
 	animation-range: 0vh 80vh;
-    font-size: calc(3.5vw + 0.5em);
+	color: var(--gold);    
+font-size: calc(3.5vw + 0.5em);
     text-transform: uppercase;
 }
 .hrMission{
