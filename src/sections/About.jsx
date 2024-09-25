@@ -1,7 +1,7 @@
 import AboutImg from "./../assets/female-lawyer-business-suit-ai-generated_921479-6683.avif";
 import "./css/About.css";
 
-function About() {
+export default function About() {
   
   return (
     <div className="about__section" id="about">
@@ -50,5 +50,3 @@ function About() {
     </div>
   );
 }
-
-export default About;
