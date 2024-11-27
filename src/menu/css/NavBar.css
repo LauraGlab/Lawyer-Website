@@ -1,5 +1,5 @@
 aside{
-  background-image: url("./../../assets/backgro.png");
+  background-image: url("../src/assets/backgro.png");
   background-size: cover;  
   background-position: top right;
   height: 100svh;
@@ -57,13 +57,18 @@ aside{
 }
 .navBar__section{
   align-items:center;
+  -moz-animation: sticky-parallax-header-move-and-size forwards;
   -webkit-animation: sticky-parallax-header-move-and-size forwards;
   animation: sticky-parallax-header-move-and-size forwards;
-	animation-timeline: scroll();
+	-moz-animation-timeline: scroll();
+  -webkit-animation-timeline: scroll();
+  animation-timeline: scroll();
+  -moz-animation-range: 0vh 90vh;
+  -webkit-animation-range: 0vh 90vh;
   animation-range: 0vh 90vh;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 14px;
   height: 100svh;
   justify-content: center;
   position: fixed;
@@ -75,20 +80,20 @@ aside{
   opacity: 0;
 }
 .menu__section{
-	-webkit-animation: sticky-parallax-menu-move-and-size forwards;
-  animation: sticky-parallax-menu-move-and-size forwards;
-	animation-timeline: scroll();
-	animation-range: 0vh 80vh;
   display: flex;
   flex-direction: row;
   padding: 0;
   position: absolute;
   right: 1em;
-  top: 3em;
+  top: 0.5em;
   column-gap: 0;
   z-index: 99999;
 }
 .menuBtn{
+  -webkit-animation: sticky-parallax-menu-move-and-size forwards;
+  animation: sticky-parallax-menu-move-and-size forwards;
+	animation-timeline: scroll();
+	animation-range: 0vh 80vh;
   background: linear-gradient(
       to right,
       transparent,
@@ -105,6 +110,7 @@ aside{
   background-repeat: no-repeat;
   border: none;
   color: var(--white);
+  height: 40px;
   margin-right: 1em;
   outline: none;
   transition: background-size 400ms;
@@ -120,7 +126,7 @@ aside{
   animation: sticky-parallax-logo-move-and-size forwards;
 	animation-timeline: scroll();
 	animation-range: 0vh 80vh;
-  background-image: url("./../../assets/logo1.svg");
+  background-image: url("../src/assets/logo1.svg");
   background-size: contain;  
   background-repeat: no-repeat;
   padding: 3em 0;
@@ -139,29 +145,36 @@ aside{
   justify-content: center;
   margin: 0;
   position: absolute;
-  top:25%;
+  top:35%;
   width: 100%;
 }
 @keyframes sticky-parallax-menu-move-and-size {
 	from {
-    font-size: 16px;
-		top: 4em;
+    box-shadow:#ffffff;
+    font-size: 14px;
+		top: 1em;
 	}
 	to {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 14px;
-		top: 1.5em;
+    padding-top: 1em;
 	}
 }
 @keyframes sticky-parallax-header-move-and-size {
 	from {
 		background-position: 50% 0;
 		height: 100svh;
+		font-size: calc(4vw + 1em);
 	}
 	to {
 		background-position: 50% 100%;
 		background-color: #897455c7;
 		height: 10svh;
+		font-size: 14px;
 	}
+
 }
 @keyframes sticky-parallax-logo-move-and-size {
 	from {
@@ -176,9 +189,13 @@ aside{
 	}
 }
 
+
 @media (max-width: 1030px){
   .header__section,.menu__section{
     display: none;
+  }
+  .navBar__section{
+    width: 100%;
   }
   .hamburgerMenu__section{
     -webkit-animation: sticky-parallax-hamburger-move-and-size forwards;
@@ -196,19 +213,22 @@ aside{
   }
   @keyframes sticky-parallax-hamburger-move-and-size {
   from {
-    top: 1em;
+    top: 1rem;
   }
 	to {
-		top: 0.25em;
+		top: 0.5rem;
 	}
 }
 }
 
 @media (max-width: 640px){
+  .navBar__section{
+    width: 100%;
+  }
   .menu__section{
     column-gap: 0;
     font-size: 14px;
-    top: 2em;
+    top: 2rem;
 }
   .hamburgerMenu__section{
     height: 30px;
@@ -216,22 +236,11 @@ aside{
   }
 @keyframes sticky-parallax-hamburger-move-and-size {
     from {
-        top: 1em;
+        top: 1rem;
     }
   to {
-    top: 0.6em;
+    top: 0.6rem;
   }
-}
-@keyframes sticky-parallax-header-move-and-size {
-	from {
-		background-position: 50% 0;
-		height: 100svh;
-	}
-	to {
-		background-position: 50% 100%;
-		background-color: #897455c7;
-		height: 8svh;
-	}
 }
 @keyframes sticky-parallax-logo-move-and-size {
 	from {
@@ -242,26 +251,50 @@ aside{
 		background-position: 50% 100%;
 		height: 7svh;
     padding: 0;
-    top: 0.2em;
+    top: 0.2rem;
 	}
 }
 }
 
 @media (max-width: 500px){
+  .navBar__section{
+    align-items: center;
+    display: flex;
+    direction: column;
+    justify-content: center;
+  }
   .menu__section{
-    padding-left: 0.5em;
+    padding-left: 0.5rem;
   }
   .logo{
     width: 200px;
   }
-  .logo__section{
-    top: 35%;
+
+  @keyframes sticky-parallax-hamburger-move-and-size {
+    from {
+        top: 1rem;
+    }
+  to {
+    top: 1.4rem;
   }
+}
+@keyframes sticky-parallax-logo-move-and-size {
+	from {
+		background-position: 50% 0;
+		height: 100svh;
+	}
+	to {
+		background-position: 50% 100%;
+		height: 7svh;
+    padding: 0;
+    top: 1rem;
+	}
+}
 }
 
 @media (max-width: 400px){
     .hamburgerMenu__section{
-        right: 0.5em;
+        right: 0.5rem;
     }
 }
 
@@ -273,13 +306,13 @@ aside{
     --white: #3a3a3a;
   }
   aside{
-  background-image: url("./../../assets/backgroDark.png");
+  background-image: url("src/assets/backgroDark.png");
   }
   .menu__section button{
     color: var(--gold);
   }
   .logo{
-    background-image: url("./../../assets/logo.svg");
+    background-image: url("src/assets/logo.svg");
   }
   @keyframes sticky-parallax-header-move-and-size {
 	from {
@@ -291,7 +324,7 @@ aside{
 		background-position: 50% 100%;
 		background-color: #585858c7;
 		height: 10svh;
-		font-size: 2em;
+		font-size: 14px;
 	}
 }
 }
