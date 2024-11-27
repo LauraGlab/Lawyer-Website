@@ -1,10 +1,10 @@
 .subpage__section{
     background-color: var(--white);
-    overflow: hidden;
+    overflow-y: hidden;
     width: 100%;
 }
 .logoSubPage{
-    padding: 1em 0 0 4em;
+    padding: 1rem 0 0 4rem;
 }
 .subpageInfo__section{
     display: flex;
@@ -12,10 +12,9 @@
     overflow: hidden;
 }
 .firstSection{
-    height: 100%;
-    padding: 2em 4em;
+    padding: 1rem 4rem;
     position: absolute;
-    top:4em;
+    top: 4rem;
     width: 50%;
 }
 .hrSubPage{
@@ -23,45 +22,45 @@
     border: none;
     color: var(--gold);
     height: 3px;
-    margin: 2em 0;
+    margin: 2rem 0;
     width: 50px;
 }
 .firstSection p{
-    -webkit-animation: fadeIn 0.5s;
-    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 500ms;
+    animation: fadeIn 500ms;
     font-size: 14px;
     width: 450px;
 }
 .imgSubPage{
-    -webkit-animation: fadeIn 0.5s;
-    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 500ms;
+    animation: fadeIn 500ms;
     height: 320px;
-    margin-top: 1em;
+    margin-top: 1rem;
     width: 455px;
 }
 .ulSubPage li{
-    -webkit-animation: fadeIn 0.5s;
-    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 500ms;
+    animation: fadeIn 500ms;
   list-style-type:disc;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.5rem;
 }
 .subpageTitle{
-    -webkit-animation: fadeIn 0.5s;
-    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 500ms;
+    animation: fadeIn 500ms;
     color: var(--black);
 }
 .secondSection{
     background-color: #89745558;
     bottom: 2em;
-    padding: 4em 4em 4em 6em;
+    padding: 4rem 4rem 4rem 6rem;
     position: absolute;
     right: 0;
-    top: 2em;
+    top: 2rem;
     width: 50%;
 }
 .secondTitle{
-    -webkit-animation: fadeIn 0.5s;
-    animation: fadeIn 0.5s;
+    -webkit-animation: fadeIn 500ms;
+    animation: fadeIn 500ms;
 }
 @keyframes fadeIn {
     0%{opacity:0;}
@@ -69,13 +68,14 @@
     100% { opacity: 1; } 
 }
 
+
 @media(max-width: 1100px){
     .imgSubPage{
-    height: 290px;
-    width: 425px;
-}
+        height: 290px;
+        width: 425px;
+    }
 .secondSection{
-    padding: 4em 2em;
+    padding: 4rem 2rem;
     width: 47%;
 }
 }
@@ -105,13 +105,13 @@
         width: calc(85vw + 0.5em);
     }
     .secondSection{
-        margin-top: 3em;
+        margin-top: 3rem;
     }
     
 }
 @media(max-width: 765px){
     .firstSection{
-        padding: 0 2em 2em;
+        padding: 0 2rem 2rem;
     }
     .imgSubPage{
         height: calc(40vw + 0.5em);;
