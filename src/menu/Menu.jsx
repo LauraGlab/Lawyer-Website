@@ -46,7 +46,7 @@ export default function Menu({ onClose }) {
           onClick={onCloseAll}
         />
         <ul className="menu2Ul">
-          <li>
+          <li className="menu2Li">
             <button
               className="menu2Btn"
               onClick={() => {
@@ -54,13 +54,14 @@ export default function Menu({ onClose }) {
                   top: 0,
                   behavior: "smooth",
                 });
+                onCloseAll();
               }}
             >
               HOME
             </button>
           </li>
           <hr />
-          <li>
+          <li className="menu2Li">
             <button
               className="menu2Btn"
               onClick={() => {
@@ -68,31 +69,34 @@ export default function Menu({ onClose }) {
                 element?.scrollIntoView({
                   behavior: "smooth",
                 });
+                onCloseAll();
               }}
             >
               MISJA
             </button>
           </li>
           <hr />
-          <li>
-            <button
-              className="menu2Btn"
-              onClick={() => {
-                const element = document.getElementById("expertise");
-                element?.scrollIntoView({
-                  behavior: "smooth",
-                });
-              }}
-            >
-              CZYM SIĘ ZAJMUJĘ?
-            </button>
-            <button className="showExpBtn" onClick={handleToggle}>
-              {showExp ? (
-                <img src={ArrowUpIcon} aria-label="open side-menu" />
-              ) : (
-                <img src={ArrowDownIcon} aria-label="close side-menu" />
-              )}
-            </button>
+          <li className="menu2LiSideMenu">
+            <div className="menu2LiSideMenuBtns">
+              <button
+                className="menu2Btn"
+                onClick={() => {
+                  const element = document.getElementById("expertise");
+                  element?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                CZYM SIĘ ZAJMUJĘ?
+              </button>
+              <button className="showExpBtn" onClick={handleToggle}>
+                {showExp ? (
+                  <img src={ArrowUpIcon} aria-label="open side-menu" />
+                ) : (
+                  <img src={ArrowDownIcon} aria-label="close side-menu" />
+                )}
+              </button>
+            </div>
             {showExp === true && (
               <MenuExp
                 onClose={() => {
@@ -102,7 +106,7 @@ export default function Menu({ onClose }) {
             )}
           </li>
           <hr />
-          <li>
+          <li className="menu2Li">
             <button
               className="menu2Btn"
               onClick={() => {
@@ -110,13 +114,14 @@ export default function Menu({ onClose }) {
                 element?.scrollIntoView({
                   behavior: "smooth",
                 });
+                onCloseAll();
               }}
             >
               O MNIE
             </button>
           </li>
           <hr />
-          <li>
+          <li className="menu2Li">
             <button
               className="menu2Btn"
               onClick={() => {
@@ -124,6 +129,7 @@ export default function Menu({ onClose }) {
                 element?.scrollIntoView({
                   behavior: "smooth",
                 });
+                onCloseAll();
               }}
             >
               KONTAKT
