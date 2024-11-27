@@ -162,13 +162,13 @@
         height: 1280px;
     }
     .aboutImg__section{
-        margin-bottom: 6rem;
+        margin-bottom: 8rem;
     }
 }
 @media (max-width: 360px){
     .aboutImg__section{
         height: 390px;
-        margin-bottom: 10rem;
+        margin-bottom: 12rem;
     }
     .aboutImg{
         height: 350px;
