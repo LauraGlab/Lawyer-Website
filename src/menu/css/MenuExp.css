@@ -1,6 +1,6 @@
 .menuExp__section{
-    -webkit-animation: slideIn 0.5s forwards;
-    animation: slideIn 0.5s forwards;
+    -webkit-animation: slideIn 500ms forwards;
+    animation: slideIn 500ms forwards;
     opacity: 0;
     overflow-x: hidden;
 }
@@ -9,7 +9,7 @@
     margin: 0;
 }
 .lawMenu{
-    padding: 0.5em 0;
+    padding: 0.5rem 0;
 }
 .lawLink{
     color: var(--gold);
@@ -24,3 +24,4 @@
 @keyframes slideIn {
     100% { opacity: 1;}
 }
+
