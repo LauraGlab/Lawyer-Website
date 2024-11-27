@@ -7,7 +7,7 @@
     opacity:0;
 }
 .menu2__section{
-  opacity: 0;
+  opacity: none;
 }
 .menu2__section.close{
   height: 100svh;
@@ -68,18 +68,45 @@
 
 @media (max-width: 1030px){
   .menu2__section{
+    -moz-animation: slide 0.5s forwards;
     -webkit-animation: slide 0.5s forwards;
     animation: slide 0.5s forwards;
     background-color: var(--white);
     height: 100svh;
     opacity: 1;
-    position: absolute;
+    position: fixed;
     right: -300px;
     top:0;
     transition: all .75s ease;
     width: 300px;
     z-index: 9999999999999999999999999999999999;
   }
+  .menu2Ul{
+    min-height: 346px;
+    position: absolute;
+  }
+  .menu2Li{
+    align-items:start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 68px;
+    width: 100%;
+  }
+  .menu2LiSideMenu{
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 68px;
+    width: 100%;
+  }
+  .menu2LiSideMenuBtns{
+    display: flex;
+    flex-direction: row;
+    min-height: 48px;
+  }
+
 @keyframes slide {
     100% { right: 0; }
 }
