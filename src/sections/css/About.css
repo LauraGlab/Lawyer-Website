@@ -1,105 +1,177 @@
 .about__section{
-    display: flex;
-    flex-direction: row;
-    padding: 3em 0;
+    background-color: #3a3a3a;
+    color: #e6e6e6;
+    display: grid;
+    grid-template-columns: 32% 35% 32%;
+    height: 80svh;
+    padding: 3em 6em;
     width: 100%;
+}
+.aboutText__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.lawyerAbout{
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform:uppercase;
+}
+.h2About{
+    color: var(--gold);
+    font-size: calc(4vw + 0.5em);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform:uppercase;
+}
+.textAbout{
+    margin-right: 4rem;
 }
 .aboutImg__section{
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    margin: 0 2em;
-    width: 35%;
+    height: 70svh;
+    justify-content: center;
 }
 .aboutImg{
-    height: 400px;
-    width: 300px;
+    border: 1px solid var(--gold);
+    border-radius: 1rem;
+    height: 450px;
+    width: 350px;
 }
-.infoAbout{
-    margin: 2em 0 0 35%;
-    text-align: left;
-    width: 100%;
+.margin{
+    margin-left: 2em;
 }
-.infoAbout p{
+.educationTitle{
     color: var(--gold);
-    font-weight: 16px;
-    margin-bottom: 1.8em;
-}
-.infoAbout span{
-    color: var(--black);
-    font-weight: 600;
-}
-.aboutText__section{
-    padding-right: 6em;
-    width: 65%;
-}
-.h2About{
-    color: var(--gold);
-    font-size: 16;
-    font-weight: 600;
-    margin-bottom: 1em;
-    text-transform:uppercase;
+    font-size: 18px;
+    margin-bottom: 0.5em;
 }
 .educationAbout{
     margin-bottom: 1.5em;
 }
-.hrAbout{
-    background-color: var(--gold);
-    border: none;
-    color: var(--gold);
-    height: 4px;
-    margin: 5em 0 0;
-    width: 60px;
+
+@media(max-width: 1150px){
+    .about__section{
+        background-color: #3a3a3a;
+        color: #e6e6e6;
+        display: grid;
+        grid-template-columns: 32% 35% 32%;
+        height: 80svh;
+        padding: 3rem;
+        text-align: left;
+        width: 100%;
+    }
+    .textAbout{
+        margin-right: 2rem;
+    }
+    .aboutImg{
+        height:400px;
+        width: 300px;
+    }
 }
-.pAbout{
-    margin-top: 2em;
-}
-@media (max-width: 900px){
+
+@media (max-width: 950px){
+    .about__section{
+        grid-template-columns: 50% 50%;
+        height: 950px;
+    }
+    .aboutText__section{
+        height: 450px;
+    }
     .h2About{
-    font-size: 15px;
-}
-.hrAbout{
-        margin: 4em 0 0;
+    font-size: calc(6vw + 0.5em);
+    }
+    .aboutImg__section{
+        height: 450px;
+    }
+    .margin{
+        width: 150%;
+    }
+    .educationTitle{
+        font-size: 24px;
     }
 }
 
 @media (max-width: 760px){
     .about__section{
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
+        display: block;
+        height: 1150px;
+    }
+    .aboutText__section{
+        height: 200px;
+        margin-bottom: 2rem;
         width: 100%;
+    }
+    .margin{
+        margin: 0;
+        min-height: 200px;
     }
     .aboutImg__section{
-        max-width: 350px;
+        height: 500px;
+        margin-bottom: 4rem;
         width: 100%;
     }
     .aboutImg{
-    max-height: 450px;
-    max-width: 350px;
-}
-    .infoAbout{
-    margin: 2em 0 0;
-    text-align: left;
-    width: 100%;
-}
-.aboutText__section{
-    max-width: 350px;
-    padding-right: 0;
-    width: 100%;
-}
-.h2About{
-    margin: 2em 0;
-
-}
+    height: 500px;
+    width: 400px;
 }
 
-@media (max-width: 300px){
+}
+
+@media (max-width: 630px){
+    .aboutImg__section{
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width: 600px){
+    .about__section{
+        height: 1250px;
+    }
+    .margin{
+        min-height: 300px;
+    }
+}
+@media (max-width: 475px){
+    .about__section{
+        height: 1200px;
+    }
+    .aboutText__section{
+        margin-bottom:0;
+    }
+    .lawyerAbout{
+        font-size: 14px;
+    }
+    .textAbout{
+        margin-right: 0;
+    }
+    .aboutImg__section{
+        margin-bottom: 3rem;
+    }
     .aboutImg{
-    max-height: 400px;
-    max-width: 350px;
-    padding: 2em;
+    height: 400px;
+    width: 300px;
 }
+}
+
+@media(max-width: 390px){
+    .about__section{
+        height: 1280px;
+    }
+    .aboutImg__section{
+        margin-bottom: 6rem;
+    }
+}
+@media (max-width: 360px){
+    .aboutImg__section{
+        height: 390px;
+        margin-bottom: 10rem;
+    }
+    .aboutImg{
+        height: 350px;
+        width: 250px;
+    }
 }
