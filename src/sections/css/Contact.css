@@ -3,7 +3,7 @@
     animation: linear animate-in-and-out;
 	animation-timeline: view();
     background: no-repeat;
-    background-image: url("src/assets/contactWhite.png");
+    background-image: url("./../../assets/contactWhite.png");
     background-size: cover;  
     display: flex;
     flex-direction: column;
@@ -170,7 +170,7 @@ input:-internal-autofill-selected {
 
 @media (prefers-color-scheme: dark) {
 	.contact__section{
-		background-image: url("src/assets/contactDark.png");
+		background-image: url("./../../assets/contactDark.png");
 	}
 	.inputFields input{
 		background-color: rgba(122, 122, 122, 0.341);
