@@ -1,9 +1,14 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "./../assets/logo.svg";
 import SubPageImg from "./../assets/subpageImg.jpg";
 import "./SubPage.css";
 
 export default function EstateLaw() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="subpage__section">
       <Link to="/">
