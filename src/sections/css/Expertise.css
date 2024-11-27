@@ -4,14 +4,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto 4em;
+    margin: 0 auto 4rem;
     min-height: 100svh;
     width: 100%;
 }
 .expertiseTitle__section{
     color: var(--gold);
     font-size: calc(2vw + 0.5em);
-    padding: 0 2em 2em;
+    font-weight: 700;
+    padding: 0 2rem 2rem;
     text-align: center;
 }
 .grid__section{
@@ -20,7 +21,6 @@
     grid-template-columns: 28% 28% 28%;
     grid-template-rows: auto;
     box-sizing: border-box;
-    width: 100%;
     height: 100%;
     margin-left: 10%;
     row-gap: 5%;
@@ -28,48 +28,52 @@
 .gridElement{
     border: 1px solid var(--gold);
     border-radius: 0.5em;
-    padding: 1em;
+    padding: 1rem;
     text-align: center;
 }
 .gridImg{
     width: 40px;
     height: 40px;
 }
-.gridElement h3{
+.lawLink{
     color: var(--gold);
-    margin-bottom: 1.2em;
+    margin-bottom: 1.2rem;
+    transition: 500ms;
 }
 .gridElement p{
     color: var(--black);
     font-size: 15px;
 }
+.lawLink:hover{
+    color: var(--lighter-gold)
+}
 @media (max-width: 950px){
     .expertiseTitle__section{
-        padding-top: 1em;
+        padding-top: 1rem;
     }
 }
 @media (max-width: 760px){
     .expertise__section{
-        padding: 2em 5em;
+        padding: 2rem 5rem;
     }
     .expertiseTitle__section{
-        padding: 2em 0;
+        padding: 2rem 0;
     }
     .grid__section{
         display: block;
         margin: 0 auto;
     }
     .gridElement{
-        margin: 0 4em 2em;
+        margin: 0 4rem 2rem;
     }
 }
 @media (max-width: 600px){
     .expertise__section{
-        padding: 2em;
+        padding: 2rem;
     }
 }
 @media (max-width: 400px){
     .gridElement{
-        margin: 0 2em 2em;
+        margin: 0 2rem 2rem;
     }
 }
