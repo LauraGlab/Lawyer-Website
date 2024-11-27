@@ -1,4 +1,5 @@
 footer {
+  color: var(--gold);
   background-color: var(--white);
   height: 100%;
   width: 100%;
@@ -10,11 +11,10 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 3em;
+  padding: 3rem;
 }
 .details {
   align-items: first baseline;
-  color: black;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -22,13 +22,18 @@ footer {
 }
 .logoFooter{
   height: 40px;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   width: 40px;
 }
-.details h3{
+.titleFooter{
+  color: var(--gold);
   font-weight: 600;
-
+  margin-bottom: 0.5rem;
 }
+.lawLink h4{
+    font-weight: 100;
+}
+
 .footerSecond{
   align-items: center;
   display: flex;
@@ -39,12 +44,12 @@ footer {
 .portfolioLink{
   color: var(--gold);
   font-size: 12px;
-  padding: 0.5em 0;
+  padding: 0.5rem 0;
 }
 
 @media (max-width: 790px) {
   .footerFirst {
-    margin: 0.5em 1em;
+    margin: 0.5rem 1rem;
   }
   .details {
     font-size: 14px;
@@ -56,14 +61,17 @@ footer {
   width: 100%;
   }
   .details {
-    margin-top: 2em;
+    margin-top: 2rem;
     width: 50%;
   }
   .details h3{
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
   }
 }
 @media (max-width: 480px) {
+  .footerFirst {
+    width:auto;
+  }
   .details {
     width: 80%;
   }
