@@ -298,7 +298,7 @@ aside {
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     border: none;
-    color: var(--gold);
+    color: var(--white);
     height: 2.5rem;
     margin-right: 1rem;
     outline: none;
@@ -316,7 +316,7 @@ aside {
     background-image: url("./../../assets/backgroDark.png");
   }
 
-  .menu__section button {
+  .menuBtn {
     color: var(--gold);
   }
 
