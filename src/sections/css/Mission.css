@@ -3,7 +3,7 @@
     animation: linear animate-in-and-out;
     animation-timeline: view();
     background: no-repeat 0%;
-    background-image: url("src/assets/serviceWhite.png");
+    background-image: url("./../../assets/serviceWhite.png");
     background-position: center;
     background-size: cover;
     color: var(--black);
@@ -127,6 +127,6 @@
 
 @media (prefers-color-scheme: dark) {
     .missionSection {
-        background-image: url("src/assets/serviceDark.png");
+        background-image: url("./../../assets/serviceDark.png");
     }
 }
