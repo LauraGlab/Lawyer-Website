@@ -1,5 +1,5 @@
 .aboutSection{
-    background-color: #3a3a3a;
+    background-color: var(--white);
     color: #e6e6e6;
     width: 100%;
 }
