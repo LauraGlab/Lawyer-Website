@@ -103,7 +103,7 @@ function App() {
       },
       {
         path: "/prawo-nieruchomosci",
-        title: "About Us",
+        title: "Prawo Nieruchomości",
         description:
           "W mojej kancelarii zajmuję się doradztwem prawnym przy transakcjach dotyczących zakupu, sprzedaży oraz najmu nieruchomości, dbając o zgodność z przepisami prawa. Reprezentuję klientów w sporach dotyczących prawa własności, zasiedzenia oraz zniesienia współwłasności. Dodatkowo, pomagam w sprawach związanych z użytkowaniem wieczystym, służebnościami oraz roszczeniami wynikającymi z naruszenia prawa do nieruchomości.",
         subTitle: "Moja pomoc w zakresie prawa nieruchomości obejmuje:",
