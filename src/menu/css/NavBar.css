@@ -109,7 +109,7 @@ aside {
   }
 
   100% {
-    background-color: var(--goldBckgr);
+    background-color: var(--gold-bckgr);
     background-position: 50% 100%;
     font-size: 0.875rem;
     height: 10svh;
