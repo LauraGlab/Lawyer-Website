@@ -5,7 +5,7 @@
 }
 
 aside {
-  background-image: url("../src/assets/backgro.png");
+  background-image: url("./../../assets/backgro.png");
   background-position: top right;
   background-size: cover;
   height: 100svh;
@@ -94,7 +94,7 @@ aside {
   animation-range: 0vh 80vh;
   -webkit-animation-timeline: scroll();
   animation-timeline: scroll();
-  background-image: url(/assets/logo1-C8oTiPGj.svg);
+  background-image: url(./../../assets/logo1-C8oTiPGj.svg);
   background-repeat: no-repeat;
   background-size: contain;
   padding: 3rem 0;
@@ -313,7 +313,7 @@ aside {
   }
 
   aside {
-    background-image: url("src/assets/backgroDark.png");
+    background-image: url("./../../assets/backgroDark.png");
   }
 
   .menu__section button {
@@ -321,7 +321,7 @@ aside {
   }
 
   .logo {
-    background-image: url("src/assets/logo.svg");
+    background-image: url("./../../assets/logo.svg");
   }
 
   @keyframes sticky-parallax-header-move-and-size {
