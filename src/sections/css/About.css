@@ -1,6 +1,6 @@
 .aboutSection{
     background-color: var(--white);
-    color: #e6e6e6;
+    color: var(--gold);
     width: 100%;
 }
 
