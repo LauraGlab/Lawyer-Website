@@ -1,0 +1,122 @@
+.background {
+    background-color: rgba(0, 0, 0, 0.416);
+    height: 100svh;
+    width: 100%;
+}
+
+.background.close {
+    opacity: 0;
+}
+
+.closeIcon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 9;
+}
+
+.menu2Section {
+    -moz-animation: slide 0.5s forwards;
+    -webkit-animation: slide 0.5s forwards;
+    animation: slide 0.5s forwards;
+    background-color: var(--white);
+    height: 100svh;
+    opacity: 1;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    transition: all 0.75s ease;
+    width: 100%;
+    z-index: 9999999999999999999999999999999999;
+}
+
+.menu2Section.close {
+    height: 100svh;
+    opacity: 0;
+    transition: all 0.75s ease;
+    width: 1px;
+}
+
+.menu2Section hr {
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 1px;
+    width: 100%;
+}
+
+.menu2Btn {
+    background-color: var(--black);
+    background: linear-gradient(to right, transparent, transparent),
+        linear-gradient(to right, var(--gold), var(--gold), var(--gold));
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 3px, 0 3px;
+    border: none;
+    color: var(--gold);
+    margin-right: 1rem;
+    outline: none;
+    transition: background-size 400ms;
+    z-index: 99;
+}
+
+.menu2Btn:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.menu2Btn:focus {
+    background-size: 0 3px, 100% 3px;
+}
+
+.menu2Li {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    height: 68px;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu2LiSideMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 68px;
+    width: 100%;
+}
+
+.menu2LiSideMenuBtns {
+    display: flex;
+    height: 64px;
+}
+
+.menu2Ul {
+    margin-top: 2.5rem;
+    min-height: 346px;
+    position: absolute;
+    width: 95%;
+}
+
+.showExpBtn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+@keyframes slide {
+    100% {
+        right: 0;
+    }
+}
+
+@media (min-width: 550px) {
+    .menu2Section {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1030px) {
+    .menu2Section {
+        opacity: none;
+    }
+}

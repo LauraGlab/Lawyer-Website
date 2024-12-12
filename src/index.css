@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1');
+
+:root{
+  --black: #3a3a3a;
+  --black-hover: #989898;
+  --gold: #897455;
+  --dark-red: #8A3433;
+  --gray: #77766C;
+  --white: #e6e6e6;
+  --main-text: "Arapey", serif !important;
+  --lighter-gold: #C7B191;
+}
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+#root{
+  height: 100svh;
+}
+body{
+  background-color: var(--white);
+  color: var(--black);
+  font-family: "Gothic A1", sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+  position: relative;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+li{
+  list-style-type: none;
+}
+.hrElement {
+  background-color: var(--gold);
+  border: none;
+  color: var(--gold);
+  height: 1px;
+  margin: 2rem 0;
+  width: 80px;
+}
+
+@media (prefers-color-scheme: dark) {
+  body{
+    --black: #e6e6e6;
+    --white: #3a3a3a;
+  }
+}

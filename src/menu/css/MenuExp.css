@@ -1,0 +1,32 @@
+.menuExpSection{
+    -moz-animation: slideIn 0.5s forwards;
+    -webkit-animation: slideIn 0.5s forwards;
+    animation: slideIn 0.5s forwards;
+    opacity: 0;
+    overflow-x: hidden;
+}
+
+.menuExpUl{
+    font-size: 14px;
+    margin: 0;
+    padding-left: 3rem;
+}
+.lawMenu{
+    padding: 0.75rem 0;
+}
+
+.lawLink{
+    color: var(--gold);
+}
+
+.menuExpSection hr{
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 1px;
+    width: 100%;
+}
+
+@keyframes slideIn {
+    100% { opacity: 1;}
+}

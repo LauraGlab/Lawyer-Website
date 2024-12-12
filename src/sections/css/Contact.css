@@ -1,0 +1,224 @@
+.contactSection {
+    -webkit-animation: linear animate-in-and-out;
+    animation: linear animate-in-and-out;
+    animation-timeline: view();
+    background: no-repeat;
+    background-image: url("src/assets/contactWhite.png");
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+    height: 100svh;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 0 3rem 0 2rem;
+    padding-right: 6rem;
+    width: 100svw;
+}
+
+.contactTitle, .contactSubTitle {
+    text-align: center;
+    width: 100%;
+}
+
+.contactTitle {
+    color: var(--gold);
+    font-size: 2.5rem; 
+    padding: 0 0 0.1rem; 
+    text-transform: capitalize;
+}
+
+.contactSubTitle {
+    color: var(--gold);
+    font-size: 1rem;
+    margin-left: 0;
+}
+
+.contactForm {
+    display: flex;
+    color: var(--black);
+    flex-direction: column;
+    text-align: right;
+    width: 100%;
+}
+
+.hrContact {
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 0.0625rem;
+    margin: 2rem 20% 0;
+}
+
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    margin: 1.5rem 3rem 0 0; 
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.inputName, .inputEmail {
+    background-color: rgba(255, 255, 255, 0.485);
+    border: 0;
+    border-radius: 0.1875rem; 
+    margin: 0;
+    outline: none;
+    padding: 1.1rem 1.75rem; 
+}
+
+.inputFields input:focus {
+    border: 0.0625rem solid var(--gold); 
+}
+
+input:-internal-autofill-selected {
+    background-color: rgba(255, 255, 255, 0.485);
+    border: 0.0625rem solid var(--gold); 
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputText {
+    background-color: rgba(255, 255, 255, 0.485);
+    border: none;
+    border-radius: 0.1875rem; 
+    height: 10rem; 
+    margin-left: 0;
+    outline: none;
+    padding: 1rem 2rem; 
+    resize: none;
+}
+
+.inputText:focus {
+    border: 0.0625rem solid var(--gold); 
+}
+
+.submitBtn__section {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    width: 100%;
+}
+
+.submitBtn {
+    background: transparent;
+    border: 0.0625rem solid var(--gold); 
+    color: var(--gold);
+    cursor: pointer;
+    padding: 1rem 1.5rem; 
+    text-transform: uppercase;
+    transition: all 500ms linear;
+    width: 100%;
+    z-index: 9;
+}
+
+.submitBtn:hover {
+    background-color: rgba(137, 116, 85, 0.266);
+    transition: all 1s;
+}
+
+.error__section {
+    height: 2rem;
+}
+
+.errorName, .errorEmail, .errorText {
+    color: var(--gold);
+    font-size: 0.75rem; 
+    font-weight: 700;
+}
+
+@keyframes animate-in-and-out {
+    entry 0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    entry 100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    exit 0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    exit 100% {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 500px) {
+    .contactSection {
+        padding: 0 4rem;
+    }
+}
+
+@media (min-width: 1030px) {
+    .contactSection {
+        padding: 0 6rem 0 0;
+    }
+
+    .contactTitle, .contactSubTitle {
+        text-align: right;
+        width: auto;
+    }
+
+    .hrContact {
+        margin: 2rem 0 0 80%;
+    }
+
+    .inputText {
+        margin-left: 55%;
+    }
+
+    .contactSubTitle {
+        margin-left: 60%;
+    }
+
+    .inputName, .inputEmail {
+        margin-left: 55%;
+    }
+
+    .submitBtn__section {
+        padding-left: 55%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .imgSubPage {
+        height: 20rem; 
+        width: 28.4375rem; 
+    }
+
+    .secondSection {
+        padding: 7rem 5rem 4rem;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .subpageInfoSection {
+        font-size: 1.125rem; 
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    .contactSection {
+        background-image: url("src/assets/contactDark.png");
+    }
+
+    .inputFields input {
+        background-color: rgba(122, 122, 122, 0.341);
+    }
+
+    .inputFields textarea {
+        background-color: rgba(122, 122, 122, 0.341);
+    }
+}

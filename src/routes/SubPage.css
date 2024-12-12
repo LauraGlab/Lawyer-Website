@@ -1,0 +1,134 @@
+.subpageSection {
+    background-color: var(--white);
+    overflow-y: hidden;
+    width: 100%;
+}
+
+.subpageLogo {
+    height: 80px;
+    padding: 1rem 0 0 2rem;
+}
+
+.subpageInfoSection {
+    overflow: hidden;
+}
+
+.firstSection {
+    padding: 2rem;
+}
+
+.subpageTitle, .secondTitle {
+    font-size: calc(5vw + .5em);
+}
+
+.subpageTitle {
+    color: var(--gold);
+}
+
+.secondTitle {
+    color: #e6e6e6;
+}
+
+.hrSubPage {
+    background-color: var(--gold);
+    border: none;
+    color: var(--gold);
+    height: 3px;
+    margin: 2rem 0;
+    width: 50px;
+}
+
+.firstSection p {
+    width: 100%;
+}
+
+.imgSubPage {
+    height: calc(40vw + .5em);
+    margin-top: 1rem;
+    width: calc(73vw + .5em);
+}
+
+.secondSection {
+    background-color: #89745558;
+    padding: 4rem 2rem;
+    right: 0;
+    width: 100%;
+}
+
+.ulSubPage li {
+    list-style-type: disc;
+    padding-bottom: .5rem;
+}
+
+@media(min-width: 615px) {
+    .subpageTitle {
+        font-size: 38px;
+    }
+
+    .secondTitle {
+        font-size: 30px;
+    }
+
+    .firstSection p {
+        margin-right: 2rem;
+        width: auto;
+    }
+}
+
+@media(min-width: 760px) {
+    .imgSubPage {
+        height: calc(52vw + .5em);
+        width: calc(85vw + .5em);
+    }
+}
+
+@media(min-width: 1000px) {
+    .subpageInfoSection {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .firstSection {
+        padding: 2rem 4rem;
+        width: 50%;
+    }
+
+    .imgSubPage {
+        height: 290px;
+        width: 425px;
+    }
+
+    .secondSection {
+        bottom: 2rem;
+        padding: 5.5rem 2rem 4rem;
+        position: absolute;
+        right: 0;
+        top: 2rem;
+        width: 47%;
+    }
+
+    .subpageLogo {
+        padding: 1rem 0 0 4rem;
+    }
+}
+
+@media(min-width: 1100px) {
+    .imgSubPage {
+        height: 320px;
+        width: 455px;
+    }
+
+    .secondSection {
+        padding: 7rem 5rem 4rem;
+        width: 50%;
+    }
+}
+
+@media(min-width: 1300px) {
+    .subpageInfoSection {
+        font-size: 18px;
+    }
+}

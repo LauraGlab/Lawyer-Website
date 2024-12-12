@@ -1,0 +1,133 @@
+.aboutSection{
+    background-color: #3a3a3a;
+    color: #e6e6e6;
+    width: 100%;
+}
+
+.aboutImg__section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.aboutImg{
+    width: 100vw;
+}
+
+.aboutText__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.lawyerAbout {
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.h2About {
+    color: var(--gold);
+    font-size: calc(6vw + .5em);
+    font-weight: 600;
+    margin: .5rem 0;
+    text-transform: uppercase;
+}
+
+.educationTitle {
+    color: var(--gold);
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+.educationAbout {
+    margin-bottom: 1.5rem;
+}
+
+@media(min-width: 435px){
+    .aboutImg{
+        margin-left: 8rem;
+    }
+}
+
+@media(min-width: 475px){
+    .aboutText__section {
+        margin-bottom: 1rem;
+    }
+
+    .aboutImg{
+        margin-left: 3rem;
+    }
+
+    .lawyerAbout {
+        font-size: 20px;
+    }
+
+    .textAbout {
+        margin-right: 2rem;
+    }
+
+}
+
+@media(min-width: 550px){
+    .aboutImg{
+    height: 100%;
+        margin-left: 0;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+@media(min-width: 760px){
+    
+    .aboutText__section {
+        font-size: 15px;
+        margin-bottom: 0;
+        padding-right: 3rem;
+    }
+
+    .educationTitle {
+        color: var(--gold);
+        font-size: 30px;
+    }
+
+}
+
+@media (min-width: 950px) {
+    .aboutSection{
+        display: grid;
+        grid-template-columns: 53% 47%;
+        padding: 3rem 1rem 3rem 0;
+    }
+    
+    .aboutText__section{
+        font-size: 14px;
+        padding-right: 1rem;
+    }
+
+    .h2About {
+        font-size: calc(5vw + .5em);
+    }
+
+    .educationAbout {
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .aboutSection{
+        grid-template-columns: 45% 55%;
+        padding: 0rem 3rem 0 0;
+    }
+
+    .aboutText__section {
+        font-size: 16px;
+        padding-right: 5rem;
+    }
+}
