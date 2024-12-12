@@ -10,7 +10,7 @@
     height: 100svh;
     justify-content: center;
     overflow-x: hidden;
-    padding: 0 3rem 0 2rem;
+    padding: 0 4rem;
     padding-right: 6rem;
     width: 100svw;
 }
@@ -151,12 +151,6 @@ input:-internal-autofill-selected {
     exit 100% {
         opacity: 0;
         transform: translateY(-50%);
-    }
-}
-
-@media (min-width: 500px) {
-    .contactSection {
-        padding: 0 4rem;
     }
 }
 
