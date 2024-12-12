@@ -49,19 +49,9 @@
     margin-bottom: 1.5rem;
 }
 
-@media(min-width: 435px){
-    .aboutImg{
-        margin-left: 8rem;
-    }
-}
-
 @media(min-width: 475px){
     .aboutText__section {
         margin-bottom: 1rem;
-    }
-
-    .aboutImg{
-        margin-left: 3rem;
     }
 
     .lawyerAbout {
