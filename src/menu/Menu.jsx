@@ -82,6 +82,7 @@ export default function Menu({ onClose }) {
                   element?.scrollIntoView({
                     behavior: "smooth",
                   });
+                  onCloseAll();
                 }}
               >
                 CZYM SIĘ ZAJMUJĘ?
