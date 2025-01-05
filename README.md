@@ -1,4 +1,4 @@
-<h1 align="center">Law Office of M. Winiarska</h1>
+<h1 align="center">Website of Law Office of M. Winiarska</h1>
 
 <div align="center">
   <img src="src/assets/readme/mw-screenshot.png" alt="law-screenshot" width="600">
