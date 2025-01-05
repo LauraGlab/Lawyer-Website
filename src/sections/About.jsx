@@ -24,27 +24,16 @@ function About() {
         <p className="lawyerAbout">prawnik</p>
         <h2 className="h2About">Martyna Winiarska</h2>
         <p className="aboutText">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sunt
-          ea facere sint quaerat id, nemo animi earum voluptatem at laborum
+          Jestem prawnikiem specjalizującym się w sprawach cywilnych i gospodarczych. Pomagam klientom w rozwiązywaniu trudnych problemów prawnych oraz oferuję wsparcie w podejmowaniu kluczowych decyzji biznesowych.
         </p>
         <hr className="hrElement" />
         <h4 className="educationTitle">Doświadczenie</h4>
         <p className="educationAbout">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-          ratione maiores amet reiciendis architecto provident sed quam. Odit
-          iure provident corporis cumque, rem enim blanditiis totam consequatur
-          sunt voluptatibus consequuntur. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit.
+          Posiadam wieloletnie doświadczenie w pracy z klientami indywidualnymi i korporacyjnymi. Brałam udział w negocjacjach międzynarodowych umów oraz prowadziłam skomplikowane sprawy sądowe, które wymagały precyzyjnego podejścia i głębokiej wiedzy prawniczej.
         </p>
         <h4 className="educationTitle">Edukacja</h4>
         <p className="educationAbout">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-          ratione maiores amet reiciendis architecto provident sed quam. Odit
-          iure provident corporis cumque, rem enim blanditiis totam consequatur
-          sunt voluptatibus consequuntur. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Recusandae enim nobis quae sit blanditiis culpa
-          earum, sed voluptatum quos nesciunt provident omnis aspernatur, ipsam
-          alias aperiam placeat optio, non laborum. <br />
+          Ukończyłam studia prawnicze na renomowanym uniwersytecie, specjalizując się w prawie cywilnym i handlowym. W trakcie kariery odbyłam również liczne kursy doszkalające, które pozwoliły mi pogłębić wiedzę w obszarze mediacji oraz arbitrażu. <br />
         </p>
       </motion.div>
     </div>
