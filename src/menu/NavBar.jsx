@@ -58,7 +58,7 @@ export default function NavBar() {
             alt="hamburger menu icon"
             aria-label="Open the menu"
           >
-            <svg width="50px" height="50px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
               <g id="color" />
               <g id="hair" />
               <g id="skin" />
