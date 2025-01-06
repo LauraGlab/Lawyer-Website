@@ -195,7 +195,7 @@ aside {
 }
 
 @media (min-width: 640px) {
-  .hamburgerMenu {
+  .hamburgerMenu, .hamburgerMenu svg {
     height: 50px;
     width: 50px;
   }
