@@ -63,7 +63,7 @@ aside {
 }
 
 .hamburgerMenu g line{
-  stroke: var(--white);
+  stroke: #ffffff !important;
 }
 
 .background {
