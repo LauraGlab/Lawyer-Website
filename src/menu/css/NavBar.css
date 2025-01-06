@@ -285,7 +285,7 @@ aside {
     padding: 0;
     position: absolute;
     right: 1rem;
-    top: 0.5rem;
+    top: 5vh;
     column-gap: 0;
     z-index: 99999;
   }
