@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import AboutImg from "./../assets/Martyna.jpg";
 import "./css/About.css";
 
-function About() {
+export default function About() {
 
   return (
     <div className="aboutSection" id="about">
@@ -39,5 +39,3 @@ function About() {
     </div>
   );
 }
-
-export default About;
