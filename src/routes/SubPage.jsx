@@ -5,7 +5,7 @@ import Logo from "./../assets/logo.svg";
 import SubPageImg from "./../assets/subpageImg.jpg";
 import "./SubPage.css";
 
-export default function CivilLaw({ title, items, description, subTitle }) {
+export default function SubPage({ title, items, description, subTitle }) {
   
   useEffect(() => {
     window.scrollTo(0, 0);
