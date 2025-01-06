@@ -122,7 +122,7 @@ function App() {
     <div className="app">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} exact />
+          <Route path="/" element={<Home />}/>
           {pages.map((page, index) => (
             <Route
               key={index}
