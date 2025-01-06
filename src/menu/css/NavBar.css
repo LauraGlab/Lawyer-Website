@@ -50,7 +50,7 @@ aside {
   animation-range: 0vh 80vh;
   -webkit-animation-timeline: scroll();
   animation-timeline: scroll();
-  border: 0.0625rem solid var(--gold);
+  border: 0.0625rem solid var(--white);
   border-radius: 0.0625rem;
   height: 2.1875rem;
   opacity: 1;
@@ -60,6 +60,10 @@ aside {
   top: 1.5rem;
   width: 2.1875rem;
   z-index: 9999999;
+}
+
+.hamburgerMenu g line{
+  stroke: var(--white);
 }
 
 .background {
@@ -316,6 +320,14 @@ aside {
     background-image: url("./../../assets/backgroDark.png");
   }
 
+  .hamburgerMenu {
+    border: 0.0625rem solid var(--gold);
+  }
+
+  .hamburgerMenu g line{
+    stroke: var(--gold);
+  }
+  
   .menuBtn {
     color: var(--gold);
   }
