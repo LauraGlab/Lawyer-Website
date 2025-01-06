@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ErrorPage from "./sections/ErrorPage.jsx";
 import Home from "./routes/Home.jsx";
 import LoadingPage from "./sections/LoadingPage.jsx";
 import SubPage from "./routes/SubPage.jsx";
 import "./App.css";
 
-function App() {
+export default function App() {
   const [loading, setLoading] = useState(true); 
 
    useEffect(() => {
@@ -137,11 +138,9 @@ function App() {
               }
             />
           ))}
-          <Route path="*" element={<div>Page Not Found</div>} />
+          <Route path="*" element={<ErrorPage/>} />
         </Routes>
       </Router>
     </div>
   );
-}
-
-export default App;
+};
