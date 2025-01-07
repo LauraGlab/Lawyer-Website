@@ -82,7 +82,6 @@ export default function NavBar() {
               <button
                 className="menuBtn"
                 onClick={() => {
-                  setBorder(true);
                   window.scroll({
                     top: 0,
                     behavior: "smooth",
