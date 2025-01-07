@@ -1,0 +1,87 @@
+.logo__section {
+  align-items: center;
+  -webkit-animation: sticky-parallax-logo-move-and-size forwards;
+  animation: sticky-parallax-logo-move-and-size forwards;
+  -webkit-animation-range: 0vh 80vh;
+  animation-range: 0vh 80vh;
+  -webkit-animation-timeline: scroll();
+  animation-timeline: scroll();
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100svh;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+
+.logo {
+  -webkit-animation: sticky-parallax-logo-move-and-size forwards;
+  animation: sticky-parallax-logo-move-and-size forwards;
+  -webkit-animation-range: 0vh 80vh;
+  animation-range: 0vh 80vh;
+  -webkit-animation-timeline: scroll();
+  animation-timeline: scroll();
+  background-image: url(./../../assets/logo1.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 3rem 0;
+  width: 12.5rem;
+}
+
+@keyframes sticky-parallax-logo-move-and-size {
+  from {
+    background-position: 50% 0;
+    height: 100svh;
+  }
+  to {
+    background-position: 50% 100%;
+    height: 7svh;
+    padding: 0;
+    top: 0.7rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .logo {
+    width: 18.75rem;
+  }
+
+  @keyframes sticky-parallax-logo-move-and-size {
+    from {
+      background-position: 50% 0;
+      height: 100svh;
+    }
+
+    to {
+      background-position: 50% 100%;
+      height: 7svh;
+      padding: 0;
+      top: 0.6rem;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  @keyframes sticky-parallax-logo-move-and-size {
+    from {
+      background-position: 50% 0;
+      height: 100svh;
+    }
+
+    to {
+      background-position: 50% 100%;
+      height: 9svh;
+      padding: 0;
+      top: 0.1rem;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo {
+    background-image: url("./../../assets/logo.svg");
+  }
+}
