@@ -304,7 +304,7 @@ aside {
     transition: background-size 0.4s;
   }
 
-  .menuBtn:hover {
+  .menuBtn:hover, .menuBtn:focus {
     background-size: 100% 0.1875rem, 100% 0.1875rem; /* Expand underline on hover */
   }
 
