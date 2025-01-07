@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/InfoItem.css"; // Optional if there's specific styling
+import "./css/InfoItem.css"; 
 
 export default function InfoItem({ icon, text }) {
   return (
