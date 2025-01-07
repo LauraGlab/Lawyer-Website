@@ -4,7 +4,7 @@ import BubbleIcon from "./../assets/icons/bubbleIcon.svg";
 import PhoneIcon from "./../assets/icons/phoneIcon.svg";
 import LetterIcon from "./../assets/icons/mailIcon.svg";
 import ClockIcon from "./../assets/icons/clockIcon.svg";
-import "./css/HeaderSection.css"; // Optional if there's specific styling
+import "./css/HeaderSection.css"; 
 
 export default function HeaderSection({ onScrollToSection }) {
   return (
@@ -15,7 +15,7 @@ export default function HeaderSection({ onScrollToSection }) {
         <InfoItem icon={ClockIcon} text="Pon-Pt 9:00-16:00" />
       </div>
       <button
-        className="message__section"
+        className="messageSection"
         onClick={() => onScrollToSection("contact")}
       >
         <img className="bubble" src={BubbleIcon} alt="bubble chat icon" />
