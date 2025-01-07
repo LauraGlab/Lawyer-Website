@@ -5,7 +5,7 @@ import LogoSection from "./LogoSection";
 import Menu from "./Menu";
 import "./css/NavSection.css";
 
-function NavSection({ showMenu, onToggleMenu }) {
+export default function NavSection({ showMenu, onToggleMenu }) {
   return (
     <nav className="navBarSection" id="navBar">
       <HamburgerMenu onToggle={onToggleMenu} showMenu={showMenu} />
@@ -14,6 +14,4 @@ function NavSection({ showMenu, onToggleMenu }) {
       <LogoSection />
     </nav>
   );
-}
-
-export default NavSection;
+};
