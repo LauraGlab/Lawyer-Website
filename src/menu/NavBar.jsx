@@ -1,13 +1,6 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import HeaderSection from "./HeaderSection.jsx";
-import Menu from "./Menu.jsx";
 import NavSection from "./NavSection.jsx";
-import BubbleIcon from "./../assets/icons/bubbleIcon.svg";
-import ClockIcon from "./../assets/icons/clockIcon.svg";
-import HamburgerIcon from "./../assets/icons/hamburger-menu.svg";
-import LetterIcon from "./../assets/icons/mailIcon.svg";
-import PhoneIcon from "./../assets/icons/phoneIcon.svg";
 import "./css/NavBar.css";
 
 export default function NavBar() {
