@@ -1,0 +1,77 @@
+.menuSection {
+  display: none;
+}
+
+@media (min-width: 1030px) {
+  .menuSection {
+    -webkit-animation:sticky-parallax-menu-move-and-size forwards;
+    animation: sticky-parallax-menu-move-and-size forwards;
+    -webkit-animation-range: 0vh 80vh;
+    animation-range: 0vh 80vh;
+    -webkit-animation-timeline: scroll();
+    animation-timeline: scroll();
+    color: var(--gold);
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    position: absolute;
+    right: 1rem;
+    top: 5vh;
+    column-gap: 0;
+    z-index: 99999;
+  }
+
+  .menuBtn {
+    -webkit-animation: sticky-parallax-menuBtn-move-and-size forwards;
+    animation: sticky-parallax-menuBtn-move-and-size forwards;
+    -webkit-animation-range: 0vh 80vh;
+    animation-range: 0vh 80vh;
+    -webkit-animation-timeline: scroll();
+    animation-timeline: scroll();
+    background: linear-gradient(to right, transparent, transparent), linear-gradient(to right, var(--gold), var(--gold), var(--gold));
+    background-size: 100% 0.1875rem, 0 0.1875rem; 
+    background-position: 100% 100%, 0 100%; 
+    background-repeat: no-repeat;
+    border: none;
+    color: var(--white);
+    height: 2.5rem;
+    margin-right: 1rem;
+    outline: none;
+    transition: background-size 0.4s;
+  }
+
+  .menuBtn:hover, .menuBtn:focus {
+    background-size: 100% 0.1875rem, 100% 0.1875rem;
+  }
+
+  @keyframes sticky-parallax-menu-move-and-size {
+    0% {
+      top: 5svh;
+    }
+  
+    100% {
+      top: 2svh;
+    }
+  }
+
+  @keyframes sticky-parallax-menuBtn-move-and-size {
+    0% {
+      font-size: 0.875rem;
+      top: 1rem;
+    }
+  
+    100% {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.875rem;
+      justify-content: center;
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .menuBtn {
+    color: var(--gold);
+  }
+}
