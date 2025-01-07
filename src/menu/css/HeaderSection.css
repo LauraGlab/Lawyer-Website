@@ -1,0 +1,40 @@
+.headerSection{
+  display: none;
+}
+
+.infoSection {
+  color: var(--gold);
+  column-gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0 0.5rem 8rem;
+}
+
+@media (min-width: 1030px) {
+  .headerSection {
+    background-color: var(--white);
+    box-shadow: 0.0625rem 0.8125rem 3.125rem -1.25rem #000;
+    display: flex;
+    height: 5svh;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99999999999999999999999999999;
+  }
+
+  .messageSection {
+    align-items: center;
+    background-color: var(--gold);
+    border: none;
+    color: #3a3a3a;
+    column-gap: 0.3125rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    margin-right: 8rem;
+    outline: none;
+    padding: 0 2rem;
+  }
