@@ -293,8 +293,8 @@ aside {
     -webkit-animation-timeline: scroll();
     animation-timeline: scroll();
     background: linear-gradient(to right, transparent, transparent), linear-gradient(to right, var(--gold), var(--gold), var(--gold));
-    background-size: 100% 0.1875rem, 0 0.1875rem;
-    background-position: 100% 100%, 0 100%;
+    background-size: 100% 0.1875rem, 0 0.1875rem; 
+    background-position: 100% 100%, 0 100%; 
     background-repeat: no-repeat;
     border: none;
     color: var(--white);
@@ -302,6 +302,10 @@ aside {
     margin-right: 1rem;
     outline: none;
     transition: background-size 0.4s;
+  }
+
+  .menuBtn:hover {
+    background-size: 100% 0.1875rem, 100% 0.1875rem; /* Expand underline on hover */
   }
 
   @keyframes topChange {
