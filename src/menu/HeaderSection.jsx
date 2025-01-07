@@ -11,7 +11,9 @@ export default function HeaderSection({ onScrollToSection }) {
     <div className="headerSection">
       <div className="infoSection">
         <InfoItem icon={PhoneIcon} text="123 456 789" />
+        <span className="dot">•</span>
         <InfoItem icon={LetterIcon} text="martynaw@gmail.com" />
+        <span className="dot">•</span>
         <InfoItem icon={ClockIcon} text="Pon-Pt 9:00-16:00" />
       </div>
       <button
